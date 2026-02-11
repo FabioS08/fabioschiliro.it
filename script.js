@@ -58,7 +58,7 @@ async function loadSignature() {
 
     try {
 
-        const response = await fetch('/data/Signature.svg');
+        const response = await fetch('./data/Signature.svg');
         if (!response.ok) throw new Error('Signature file not found');
         
         const svgText = await response.text();
