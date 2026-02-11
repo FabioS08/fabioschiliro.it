@@ -21,6 +21,7 @@ This repository hosts the source code of my personal portfolio website, built as
 | Feature Demo |
 |:--------------:|
 | ![Demo GIF](/images/example.gif) |
+
 <br></br>
 ## 🚀 Run Locally
 Clone the repo and open the website:
