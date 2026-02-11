@@ -477,5 +477,5 @@ h3:first-child { margin-top: 0; }
     .glass-dashboard { grid-template-columns: 1fr; height: auto; display: block; }
     .dashboard-sidebar { margin-bottom: 20px; }
     .glass-window { min-height: 500px; pad: 20px;}
-    .repo-grid {grid-template-columns: 1fr; gap: 20px;}
+    .repo-grid {grid-template-columns: 1fr; gap: 40px;}
 }
