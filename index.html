@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>B. Fabio Schilirò</title>
+    
+    <link rel = "icon" type = "image/svg+xml" href = "data/Logo.svg">
+    <link rel = "icon" type = "image/png" href = "data/favicon.png">
+    <link rel = "mask-icon" href = "data/Logo.svg" color = "#ff0015">
+    <link rel = "apple-touch-icon" href = "data/favicon.png">
+
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');</style>
+
+</head>
+
+<body>
+
+    <!--* The container for Logo/Signature/ScrollDownArrow as starting page -->
+    <div id = "intro-container">
+
+        <div class = "logo-wrapper">
+            
+            <img id = "logo" src = "/data/Logo.svg" alt = "Logo"> 
+            <div id="signature-container"></div>
+        
+        </div>
+        
+        <div class = "scroll-prompt">
+
+            <span class = "prompt-text">Slow Scroll Down</span>
+            <div class = "scroll-arrow"></div>
+        
+        </div>
+   
+    </div>
+
+
+    <!--* The container for the information -->
+    <main id="main-content">
+        
+        <div class = "glass-dashboard">
+            
+            <aside class = "dashboard-sidebar">
+                
+
+                <!--* Profile Image -->
+                <div class = "profile-ball-container">
+
+                    <div class = "liquid-ball">
+                    
+                        <img src = "data/ProfilePicture.png" alt = "Profile">
+                        <div class = "glare"></div>
+                    
+                    </div>
+                
+                </div>
+
+                <!--* Profile Contact Information -->
+                <div class = "glass-card info-card">
+
+                    <!--* Name / Role -->
+                    <h1>Biagio Fabio<br>Schilirò</h1>
+                    <p class = "role">Artificial Intelligence Engineer</p>
+
+                    <div class = "contact-list">
+                        
+                        <!--* Email -->
+                        <div id = "email-item" class = "contact-item" onclick = "copyEmail()">
+                            <i class = "fa-regular fa-envelope"></i>
+                            <span id = "email-text">fabio.schiliro.fs@gmail.com</span>
+                            <span class = "tooltip-text">Click to copy</span>
+
+                        </div>
+
+                        <!--* Birthdate -->
+                        <div class = "contact-item">
+                            <i class = "fa-regular fa-calendar"></i>
+                            <span>08 August 1999</span>
+                        </div>
+
+                        <!--* Location -->
+                        <div class = "contact-item">
+                            <i class = "fa-solid fa-location-dot"></i>
+                            <span>Italy</span>
+                        </div>
+
+                    </div>
+
+                    <!--* Socials: Linkedin/Instagram/GitHub -->
+                    <div class="social-icons">
+
+                        <a href = "https://www.linkedin.com/in/biagiofabioschiliro" target = "_blank" rel="noopener noreferrer"><i class = "fa-brands fa-linkedin"></i></a>
+                        <a href = "https://www.instagram.com/fabio_schiliro_fs?igsh=MW01ZHB2aWw0dzNyYw%3D%3D&utm_source=qr" target = "_blank" rel="noopener noreferrer"><i class = "fa-brands fa-instagram"></i></a>
+                        <a href = "https://github.com/FabioS08" target = "_blank" rel="noopener noreferrer"><i class = "fa-brands fa-github"></i></a>
+                    
+                    </div>
+
+                </div>
+            </aside>
+
+            <!--* Right Main Section -->
+            <section class="dashboard-main">
+                
+                <!--* Nav Bar -->
+                <nav class = "glass-nav">
+
+                    <button class = "nav-btn active" onclick = "switchTab('about')">About Me</button>
+                    <button class = "nav-btn" onclick = "switchTab('projects')">Projects</button>
+                
+                </nav>
+
+                <!--* Content Window -->
+                <div class = "glass-window">
+                    
+                    <div id = "about" class = "tab-content active">
+                        
+                        <h3>Who am I?</h3>
+                        <p class = "bio">
+                            Driven by curiosity and a passion for AI, I try to push boundaries to solve complex challenges and design intelligent, elegant solutions.
+                            As a problem-solver with a sharp sense of design, I always strive to merge innovation and aesthetics to create meaningful, effective results.
+                            I embrace every challenge as an opportunity to grow and redefine possibilities - Always evolving, always learning!
+                        </p>
+
+                        <h3>Skills</h3>
+                        <div class="skills-marquee">
+                            <div class="skills-track">
+
+
+                                <div class = "skill-item"><i class = "devicon-python-plain colored"></i> Python</div>
+                                <div class = "skill-item"><i class = "devicon-c-plain colored"></i> C</div>
+                                <div class = "skill-item"><i class = "devicon-java-plain colored"></i> Java</div>
+                                <div class = "skill-item"><i class = "devicon-html5-plain colored"></i> HTML</div>
+                                <div class = "skill-item"><i class = "devicon-css3-plain colored"></i> CSS</div>
+                                <div class = "skill-item"><i class = "devicon-javascript-plain colored"></i> JavaScript</div>
+
+                                <div class = "skill-item"><i class = "devicon-mysql-plain colored"></i> MySQL</div>
+                                <div class = "skill-item"><i class = "devicon-mongodb-plain colored"></i> MongoDB</div>
+                                <div class = "skill-item"><i class = "devicon-neo4j-plain colored"></i> Neo4J</div>
+
+                                <div class = "skill-item"><i class = "devicon-git-plain colored"></i> Git</div>
+                                <div class = "skill-item"><i class = "devicon-github-original"></i> GitHub</div>
+
+                                <div class = "skill-item"><i class = "devicon-docker-plain colored"></i> Docker</div>
+                                <div class = "skill-item"><i class = "devicon-kubernetes-plain colored"></i> Kubernetes</div>
+
+                                <div class = "skill-item"><i class = "fa-solid fa-brain"></i> AI/ML/RL</div>
+                                <div class = "skill-item"><i class = "devicon-pytorch-original colored"></i> PyTorch</div>
+                                <div class = "skill-item"><i class = "devicon-tensorflow-original colored"></i> TensorFlow</div>
+
+                                <div class="skill-item"><i class="devicon-scikitlearn-plain"></i> Scikit-learn</div>
+                                <div class = "skill-item"><i class = "devicon-pandas-plain colored"></i> Pandas</div>
+                                <div class = "skill-item"><i class = "devicon-numpy-plain colored"></i> Numpy</div>
+                                <div class = "skill-item"><i class = "devicon-matplotlib-plain colored"></i> Matplotlib</div>
+                                <div class = "skill-item"><i class = "devicon-plotly-plain"></i> Plotly</div>
+                                <div class = "skill-item"><i class = "devicon-opencv-plain colored"></i> OpenCV</div>
+                                <div class = "skill-item"><i class = "fa-solid fa-cube"></i></i> MMdetection3D</div>
+                                <div class = "skill-item"><i class = "devicon-huggingface-plain colored"></i> HuggingFace</div>
+
+                                <div class = "skill-item"><i class = "devicon-latex-original"></i> LaTeX</div>
+                                <div class = "skill-item"><i class = "devicon-markdown-original"></i> Markdown</div>
+                                
+                            </div>
+                        </div>
+
+        
+                        <h3>Education</h3>
+                        <div class = "timeline">
+
+                            <div class = "timeline-item">
+                                <h4>Politecnico di Milano</h4>
+                                <span class = "date">Sep 2022 - Dec 2025</span>
+                                <p>Master's Degree in Computer Science and Engineering (A.I. Track)</p>
+                                <p>Thesis: Real-Time Multimodal Road Users Detection for Smart Infrastructures</p>
+                                <p>Grade: 110/110 Cum Laude</p>
+                            </div>
+
+                            <div class = "timeline-item">
+                                <h4>Università degli Studi di Catania</h4>
+                                <span class = "date">Sep 2018 - Apr 2022</span>
+                                <p>Bachelor's degree in Computer Engineering</p>
+                                <p>Thesis: Web Application and Website Vulnerability Assessment Tools</p>
+                                <p>Grade: 110/110 Cum Laude</p>
+                            </div>
+
+                            <div class = "timeline-item">
+                                <h4>Liceo Classico - Istituto Superiore “Ven. Ignazio Capizzi”</h4>
+                                <span class = "date">Sep 2013 - Jun 2018</span>
+                            </div>
+
+                        </div>
+
+
+                        <h3>Experience</h3>
+                        <div class = "timeline">
+
+                            <div class = "timeline-item">
+                                <h4>Research Student @ AIRLab - Politecnico di Milano</h4>
+                                <span class = "date">Feb 2025 - Dec 2025</span>
+                                <p>I develop my Master's Thesis, titled "Real-Time Multimodal Road Users Detection for Smart Infrastructures via Optimized Point Cloud Filtering". <br>
+                                The main focus of this project was on the deployment of multimodal 3D Object Detection models on edge computing platforms, specifically the NVIDIA Jetson AGX Orin. The research investigated optimized point cloud filtering strategies aimed at reducing computational overhead while preserving high detection accuracy. <br>
+                                The principal objective was to achieve an effective trade-off between robust detection performance and the stringent low-latency requirements of real-time Smart Infrastructure applications.</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id = "projects" class = "tab-content">
+                        <div id = "repo-grid" class = "repo-grid">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
