@@ -18,7 +18,6 @@ This repository hosts the source code of my personal portfolio website, built as
 - **Project Showcase** generated dynamically by fetching my public GitHub repositories via the GitHub API, then rendering them as glass cards with custom cover images and showing priorities
 
 <br></br>
-
 | Feature Demo |
 |:--------------:|
 | ![Demo GIF](/images/example.gif) |
